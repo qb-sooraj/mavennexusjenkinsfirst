@@ -9,7 +9,7 @@ pipeline {
 
             steps {
 
-                    sh 'mvn --settings settings.xml clean compile'
+                    sh 'mvn --settings settings.xml compile'
 
             }
         }
