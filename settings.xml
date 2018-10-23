@@ -6,13 +6,13 @@
   <servers>
     <server>
       <id>maven-snapshots</id>
-      <username>admin</username>
-      <password>90KS6Jb01p5sI</password>
+      <username>deployment</username>
+      <password>qburst123</password>
     </server>
     <server>
       <id>maven-releases</id>
-      <username>admin</username>
-      <password>90KS6Jb01p5sI</password>
+      <username>deployment</username>
+      <password>qburst123</password>
     </server>
   </servers>
 
