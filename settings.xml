@@ -7,12 +7,12 @@
     <server>
       <id>maven-snapshots</id>
       <username>admin</username>
-      <password>qburst</password>
+      <password>90KS6Jb01p5sI</password>
     </server>
     <server>
       <id>maven-releases</id>
       <username>admin</username>
-      <password>qburst</password>
+      <password>90KS6Jb01p5sI</password>
     </server>
   </servers>
 
@@ -20,7 +20,7 @@
     <mirror>
       <id>central</id>
       <name>central</name>
-      <url>http://localhost:8081/repository/maven-group/</url>
+      <url>http://fr-oms-nexus.qburst.build/repository/maven-group/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
