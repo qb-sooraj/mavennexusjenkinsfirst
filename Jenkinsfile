@@ -1,15 +1,15 @@
 pipeline {
     agent any
      tools { 
-        maven 'default maven' 
-        
+        maven 'default maven'  
     }
     stages {
         stage ('Compile Stage') {
 
             steps {
 
-                    sh 'mvn --settings settings.xml compile'
+		    sh 'git clone https://github.com/arjunksofficial/mavennexusjenkinsfirst.git'
+		    sh 'cd mavennexusjenkinsfirst'
 
             }
         }
@@ -17,9 +17,10 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-
-                    sh 'mvn --settings settings.xml package'
-
+            
+            sh 'mvn --settings settings.xml install -Dmaven.test.skip=true'
+            sh 'mvn --settings settings.xml package -Dmaven.test.skip=true'
+            
             }
         }
 
@@ -27,7 +28,7 @@ pipeline {
         stage ('Deployment Stage') {
             steps {
 
-                    sh 'mvn --settings settings.xml deploy'
+                    sh 'mvn --settings settings.xml deploy -Dmaven.test.skip=true'
 
             }
         }
