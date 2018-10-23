@@ -7,7 +7,7 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-
+		    sh 'rm -rf mavennexusjenkinsfirst'
 		    sh 'git clone https://github.com/arjunksofficial/mavennexusjenkinsfirst.git'
 		    sh 'cd mavennexusjenkinsfirst'
 
